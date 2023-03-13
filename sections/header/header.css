@@ -1,0 +1,38 @@
+ul>div {
+  background-color: white;
+  padding: 1rem;
+  margin: 2% 1vw;
+  border-radius: 10%;
+}
+
+header {
+  background-color: #006566;
+}
+
+body {
+  margin: 0px;
+}
+
+.imageText {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+}
+
+.image {
+  flex-basis: 10%;
+}
+
+.bigHead {
+  font-family: 'Sen', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  text-decoration-color: none;
+  color: #000000
+}
+
+a:hover {
+  color: #3c3c3c
+}
