@@ -11,25 +11,73 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic'
     rel='stylesheet' type='text/css'>
   <!-- <base href="/grossmont-cybersecurity-club/" /> -->
-
 </head>
 
 <!--Header-->
 
-
-
 <body style="margin: 0">
   <div class="fixed-header">
-    <iframe src="sections/header/header.html" width="100%" height="100%" frameborder="0"></iframe>
+    <iframe id="header" src="sections/header/header.html" width="100%" height="100%" frameborder="0"></iframe>
   </div>
   <!-- <div class="carousel">
     <iframe src="sections/carousel/carousel.html" width="100%" height="100%" frameborder="0"></iframe>
   </div> -->
   <div class="club-list">
-    <iframe src="sections/dist/index.html" width="100%" height="100%" frameborder="0"></iframe>
+    <iframe id="club-list" src="sections/club-list/club-list.html" width="100%" height="100%" frameborder="0"></iframe>
   </div>
 
   <script src="jquery.min.js"></script>
+  <script>
+    // Wait for the page to finish loading
+    $(document).ready(function () {
+
+      // Get the first iframe element and its document object
+      var iframe1 = $('#header');
+      var iframe1Doc = iframe1.contents()[0];
+
+      var iframe2 = $('#club-list');
+      var iframe2Doc = iframe2.contents()[0];
+      // Add a click event listener to all anchor elements in the first iframe
+      // $(iframe1Doc).find('a').click(function (event) {
+
+      //   // Prevent the default link behavior
+      //   event.preventDefault();
+
+      //   // Get the second iframe element and its document object
+
+
+      //   // Get the body element in the second iframe and set its background color to red
+      //   // $(iframe2Doc).find('body').css('background-color', 'red');
+
+      // });
+
+      $(iframe1Doc).find('#collegeSwap').click(function () {
+        event.preventDefault();
+
+        var currentText = $(this).text();
+
+        // Toggle the text between 'Grossmont College' and 'Cuyamaca College'
+        if (currentText === 'Grossmont College Club Hub') {
+          $(this).text('Cuyamaca College Club Hub');
+          $(iframe1Doc).find('header').css('background-color', '#001C58'); // Set the header color to blue
+          // $('#collegeLogo').attr('src', 'https://www.grossmont.edu/faculty-staff/creative-services/_assets/logos/icon/gc-shield-rgb.gif'); // Set the image source to the Cuyamaca College logo
+          iframe2.attr('src', 'sections/club-list/cuyamaca-clubs.html');
+
+        } else {
+          $(this).text('Grossmont College Club Hub');
+          $(iframe1Doc).find('header').css('background-color', '#006A65'); // Set the header color to blue
+          // $('#collegeLogo').attr('src', 'https://www.grossmont.edu/faculty-staff/creative-services/_assets/logos/icon/gc-shield-rgb.gif'); // Set the image source to the Grossmont College logo
+          iframe2.attr('src', 'sections/club-list/grossmont-clubs.html');
+
+        }
+
+        // $(iframe2Doc).find('body').css('background-color', 'red');
+      });
+
+
+    });
+
+  </script>
   <script src="sticky-header.js"></script>
 </body>
 
