@@ -6,7 +6,7 @@ ul>div {
 }
 
 header {
-  background-color: #006566;
+  background-color: #006A65;
 }
 
 body {
@@ -20,7 +20,7 @@ body {
 }
 
 .image {
-  flex-basis: 1%;
+  flex-basis: 5vh
 }
 
 .bigHead {
@@ -38,6 +38,7 @@ a:not(.bigHead a) {
 
 .bigHead a {
   color: white;
+  padding-left: 5vh;
 }
 
 a:hover, .bigHead:hover {
