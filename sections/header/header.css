@@ -1,8 +1,8 @@
 ul>div {
   background-color: white;
   padding: 1rem;
-  margin: 2% 1vw;
-  border-radius: 10%;
+  margin: 15vh 1vw;
+  border-radius: 15px;
 }
 
 header {
@@ -20,7 +20,7 @@ body {
 }
 
 .image {
-  flex-basis: 10%;
+  flex-basis: 1%;
 }
 
 .bigHead {
@@ -30,9 +30,16 @@ body {
 a {
   text-decoration: none;
   text-decoration-color: none;
-  color: #000000
 }
 
-a:hover {
+a:not(.bigHead a) {
+  color: black;
+}
+
+.bigHead a {
+  color: white;
+}
+
+a:hover, .bigHead:hover {
   color: #3c3c3c
 }

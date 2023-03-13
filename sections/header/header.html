@@ -14,35 +14,56 @@
   <header>
     <nav>
       <ul>
-
         <div style="float: right; font-family: 'Sen', sans-serif;">
-          <a href="https://github.com/khiemgluong/grossmont-cybersecurity-club" target="_blank">Source Code
+          <a href="https://github.com/gcccd-clubs/gcccd-clubs.github.io" target="_blank">Source Code
           </a>
         </div>
-        <div style="float: right; font-family: 'Sen', sans-serif;">
+        <!-- <div style="float: right; font-family: 'Sen', sans-serif;">
           <a href="/pages/contact/contact.html" target="_parent">Contact</a>
-        </div>
+        </div> -->
 
-        <div style="float: right; font-family: 'Sen', sans-serif;"><a href="#">Alumni</a></div>
+        <!-- <div style="float: right; font-family: 'Sen', sans-serif;"><a href="#">Alumni</a></div>
         <div style="float: right; font-family: 'Sen', sans-serif;"><a
             href="/pages/about/about.html" target="_parent">About</a></div>
-        <div style="float: right; font-family: 'Sen', sans-serif;"><a href="">Activites</a></div>
+        <div style="float: right; font-family: 'Sen', sans-serif;"><a href="">Activites</a></div> -->
 
 
       </ul>
     </nav>
     <div class="imageText">
-      <div class="image" style="padding-top: 1rem;">
-        <img src="https://www.grossmont.edu/faculty-staff/creative-services/_assets/logos/icon/gc-shield-rgb.gif"
+      <div class="image" style="padding-top: 1vh;">
+        <img id="collegeLogo" src="https://www.grossmont.edu/faculty-staff/creative-services/_assets/logos/icon/gc-shield-rgb.gif"
           width="100" height="125">
       </div>
-      <h1 class="bigHead" style="text-align: left; padding: 0.5rem;"><a href="/index.html"
-          target="_parent">
-          Grossmont Cybersecurity <br>
-          Club Archives</a>
-      </h1>
+      <h1 class="bigHead" style="text-align: left; padding: 10vh 0;"><a id="collegeSwap" href="#"
+          target="_self">Grossmont College Club Hub</a> </h1>
     </div>
   </header>
+  <script src="/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Add a click event listener to the <a> tag with id 'collegeSwap'
+      $('#collegeSwap').click(function () {
+        // Get the current text of the <a> tag
+        var currentText = $(this).text();
+
+        // Toggle the text between 'Grossmont College' and 'Cuyamaca College'
+        if (currentText === 'Grossmont College Club Hub') {
+          $(this).text('Cuyamaca College Club Hub');
+          $('header').css('background-color', '#1D4E91'); // Set the header color to blue
+          $('#collegeLogo').attr('src', 'https://www.grossmont.edu/faculty-staff/creative-services/_assets/logos/icon/gc-shield-rgb.gif'); // Set the image source to the Cuyamaca College logo
+
+
+        } else {
+          $(this).text('Grossmont College Club Hub');
+          $('header').css('background-color', '#006566'); // Set the header color to blue
+          $('#collegeLogo').attr('src', 'https://www.grossmont.edu/faculty-staff/creative-services/_assets/logos/icon/gc-shield-rgb.gif'); // Set the image source to the Grossmont College logo
+
+
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>

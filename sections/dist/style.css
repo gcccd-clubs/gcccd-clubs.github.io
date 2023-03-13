@@ -1,0 +1,82 @@
+.container{max-width: 90%; margin:0 auto;}
+.row{width:100%;margin-bottom:15px}
+
+.nine.columns{width:70%;*width:70%;}
+
+.three.columns{width:40%;*width:40%}
+
+.tab-list {
+  margin: 1rem 0 1rem;
+  padding: 0px;
+  font-family: BentonSans;
+  font-size: 1rem;
+  float: left;
+  width: 100%;
+}
+
+
+
+.tab-list li {
+  display: block;
+  list-style-type: none;
+  background-color: #e2e2e2;
+  text-transform: uppercase;
+  /* height: 3em; */
+  border:2px solid white;
+  border-bottom: none;
+  font-family: BentonSansCond;
+  text-shadow: 0 -1px 1px #ffffff;
+  font-weight: bold;
+  padding: 0.1rem;
+  margin: 1rem 0;
+  border-radius: 15px;
+
+}
+
+.tab-list li a {
+  color: black;
+  display: block;
+  text-decoration: none;
+  font-size: .9em;
+  padding:  1em 0.5em 1em;
+
+}
+
+
+
+/********** HOVER STATES **********/
+.tab-list li:hover{
+  background-color:#d3d3d3;
+}
+
+.tab-list li.active, .tab-list li.hover {
+  border-left: 3px solid maroon;
+  border-radius: 15px;
+}
+
+
+
+
+/********** PANELS **********/
+.tab-panel {
+  display: none;
+  color: black;
+  float: left;
+  min-height: 150px;
+  overflow: auto;
+  width: 100%;
+}
+
+.tab-panel.active {
+  display: block;
+}
+
+.tab-panel p {
+  margin: 0px;
+}
+
+
+.tab-inner-list{
+  list-style-type:disc;
+  padding-left: 7%;
+}
