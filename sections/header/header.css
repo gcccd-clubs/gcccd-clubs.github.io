@@ -41,6 +41,6 @@ a:not(.bigHead a) {
   padding-left: 5vh;
 }
 
-a:hover, .bigHead:hover {
+a:hover:not(.bigHead a) {
   color: #3c3c3c
 }
