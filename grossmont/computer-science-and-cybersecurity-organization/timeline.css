@@ -1,8 +1,8 @@
 body {
   margin: 0;
-  background: rgb(230, 230, 230);
-
-  color: rgb(50, 50, 50);
+  /* background: rgb(230, 230, 230); */
+  /* color: rgb(50, 50, 50); */
+  color:white;
   font-size: 112.5%;
   line-height: 1.6em;
 }
@@ -91,7 +91,7 @@ h3{
 .flag {
   position: relative;
   display: inline;
-  background: rgb(248, 248, 248);
+  background: #ed7d3a;
   padding: 6px 10px;
   border-radius: 5px;
 
