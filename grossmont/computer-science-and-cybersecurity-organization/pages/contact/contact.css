@@ -1,5 +1,12 @@
-h3, h4, li, p{
+h3, h2, li, p{
     color: white;
-    font-family: 'Verdana', sans-serif;
-
+    font-family: 'Sen', sans-serif;
+}
+a{
+    text-decoration: none;
+    text-decoration-color: none;
+    color: #ef2d56
+}
+a:hover{
+    color: #a61c3a;
 }
