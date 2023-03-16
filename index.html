@@ -37,19 +37,6 @@
 
       var iframe2 = $('#club-list');
       var iframe2Doc = iframe2.contents()[0];
-      // Add a click event listener to all anchor elements in the first iframe
-      // $(iframe1Doc).find('a').click(function (event) {
-
-      //   // Prevent the default link behavior
-      //   event.preventDefault();
-
-      //   // Get the second iframe element and its document object
-
-
-      //   // Get the body element in the second iframe and set its background color to red
-      //   // $(iframe2Doc).find('body').css('background-color', 'red');
-
-      // });
 
       $(iframe1Doc).find('#collegeSwap').click(function () {
         event.preventDefault();
@@ -60,21 +47,15 @@
         if (currentText === 'Grossmont College Club Hub') {
           $(this).text('Cuyamaca College Club Hub');
           $(iframe1Doc).find('header').css('background-color', '#001C58'); // Set the header color to blue
-          // $('#collegeLogo').attr('src', 'https://www.grossmont.edu/faculty-staff/creative-services/_assets/logos/icon/gc-shield-rgb.gif'); // Set the image source to the Cuyamaca College logo
           iframe2.attr('src', 'sections/club-list/cuyamaca-clubs.html');
 
         } else {
           $(this).text('Grossmont College Club Hub');
           $(iframe1Doc).find('header').css('background-color', '#006A65'); // Set the header color to blue
-          // $('#collegeLogo').attr('src', 'https://www.grossmont.edu/faculty-staff/creative-services/_assets/logos/icon/gc-shield-rgb.gif'); // Set the image source to the Grossmont College logo
           iframe2.attr('src', 'sections/club-list/grossmont-clubs.html');
-
         }
-
         // $(iframe2Doc).find('body').css('background-color', 'red');
       });
-
-
     });
 
   </script>
