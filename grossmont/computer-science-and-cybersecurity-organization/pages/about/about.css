@@ -1,3 +1,8 @@
-h4, li, p{
+/* h4, li, p{
     color: white;
-}
+} */
+
+body {
+    padding-top: 10vh;
+    padding-bottom: 15vh;
+  }
