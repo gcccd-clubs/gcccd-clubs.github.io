@@ -3,8 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Club List - WIP</title>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./club-list.css">
 
 </head>
 
@@ -14,18 +13,29 @@
     <h3>Grossmont Community College Clubs</h3>
 
     <div class="row">
-      <div class="three columns">
-        <ul class="tab-list">
-          <li class="active"><a class="tab-control" href="#tab-1">ARABIC CLUB</a></li>
-          <li><a class="tab-control" href="#tab-2">CALIFORNIA NURSING STUDENTS' ASSOCIATION (CNSA)</a></li>
-          <li><a class="tab-control" href="#tab-3">CARDIOVASCULAR TECHNOLOGY (CVT) CLUB</a></li>
-          <li><a class="tab-control" href="#tab-4">COMPUTER SCIENCE AND CYBERSECURITY ORGANIZATION</a></li>
-          <li><a class="tab-control" href="#tab-5">CONSERVATION CLUB </a></li>
-          <li><a class="tab-control" href="#tab-6">GRIFFIN BEATS </a></li>
-          <li><a class="tab-control" href="#tab-7">SEXUAL ORIENTATION GENDER IDENTITY (S.O.G.I) CLUB </a></li>
+      <div style="display: grid; grid-template-columns: 0.8fr 1fr;">
+        <div class="three columns">
+          <ul class="tab-list">
+            <li class="active"><a class="tab-control" href="#tab-1">ARABIC CLUB</a></li>
+            <li><a class="tab-control" href="#tab-2">CALIFORNIA NURSING STUDENTS' ASSOCIATION (CNSA)</a></li>
+            <li><a class="tab-control" href="#tab-3">CARDIOVASCULAR TECHNOLOGY (CVT) CLUB</a></li>
+            <li><a class="tab-control" href="#tab-4">COMPUTER SCIENCE AND CYBERSECURITY ORGANIZATION</a></li>
+            <li><a class="tab-control" href="#tab-5">CONSERVATION CLUB </a></li>
+            <li><a class="tab-control" href="#tab-6">GRIFFIN BEATS </a></li>
+            <li><a class="tab-control" href="#tab-7">SEXUAL ORIENTATION GENDER IDENTITY (S.O.G.I) CLUB </a></li>
 
-        </ul>
-      </div> <!-- three columns-->
+          </ul>
+        </div> <!-- three columns-->
+
+        <div style="display: flex; align-items: center; justify-content: left;">
+          <img id="clubLogo"
+            src="/media/District-Logo-Icon-4canvas.png"
+            alt="Your Image">
+        </div>
+      </div>
+
+      <div id="clubLogos" data-paths="/grossmont/computer-science-and-cybersecurity-organization/media/Logo.png, /path2/, /path3/"></div>
+
 
       <div class="nine columns informatives">
         <div class="tab-panel active" id="tab-1">
@@ -117,7 +127,7 @@
         </div>
 
         <div class="tab-panel" id="tab-4">
-          <h4><a href="/grossmont/computer-science-and-cybersecurity-organization/index.html" target="_parent">SCIENCE AND CYBERSECURITY ORGANIZATION</a> </h4>
+          <h4><a href="/grossmont/computer-science-and-cybersecurity-organization/index.html" target="_parent">COMPUTER SCIENCE AND CYBERSECURITY ORGANIZATION</a> </h4>
           <p>Praesent non mi break it down maurizzle boofron bibendizzle. Aliquizzle lacinia ma nizzle lectus. Crizzle
             doggy enim bling bling leo sodalizzle check it out. Aliquizzle yo mamma, check out this vitae dapibizzle
             izzle, nulla ligula for sure break yo neck, yall, shiznit venenatis check out this mammasay mammasa mamma oo
@@ -186,8 +196,8 @@
     </div>
   </div>
   <!-- partial -->
-  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-  <script src="./script.js"></script>
+  <script src='/jquery.min.js'></script>
+  <script src="./club-list.js"></script>
 
 </body>
 

@@ -3,8 +3,13 @@
 
 .nine.columns{width:70%;*width:70%;}
 
-.three.columns{width:40%;*width:40%}
+.three.columns{width:80%;*width:80%}
 
+#clubLogo{
+  height: fit-content; 
+  width: 40%;
+  border-radius: 25px;
+}
 .tab-list {
   margin: 1rem 0 1rem;
   padding: 0px;
