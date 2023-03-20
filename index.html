@@ -45,17 +45,16 @@
         var currentText = $(this).text();
 
         // Toggle the text between 'Grossmont College' and 'Cuyamaca College'
-        if (currentText === 'Grossmont College Club Hub') {
-          $(this).text('Cuyamaca College Club Hub');
+        if (currentText === 'Grossmont College Clubs') {
+          $(this).text('Cuyamaca College Clubs');
           $(iframe1Doc).find('header').css('background-color', '#001C58'); // Set the header color to blue
           iframe2.attr('src', 'sections/club-list/cuyamaca-clubs.html');
 
         } else {
-          $(this).text('Grossmont College Club Hub');
+          $(this).text('Grossmont College Clubs');
           $(iframe1Doc).find('header').css('background-color', '#006A65'); // Set the header color to blue
           iframe2.attr('src', 'sections/club-list/grossmont-clubs.html');
         }
-        // $(iframe2Doc).find('body').css('background-color', 'red');
       });
     });
 
