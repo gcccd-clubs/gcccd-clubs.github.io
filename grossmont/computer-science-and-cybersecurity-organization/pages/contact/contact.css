@@ -5,8 +5,4 @@ h3, h2, li, p{
 a{
     text-decoration: none;
     text-decoration-color: none;
-    color: #ef2d56
-}
-a:hover{
-    color: #a61c3a;
 }
