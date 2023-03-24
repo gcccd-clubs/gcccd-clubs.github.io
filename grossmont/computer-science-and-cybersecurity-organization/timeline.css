@@ -8,12 +8,12 @@ body {
 }
 
 body *:not(h3):not(h4) {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Work Sans', sans-serif;
 
 }
 
 h3{
-  font-family: 'Verdana', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-size: 1rem;
   padding: 2vw;
 

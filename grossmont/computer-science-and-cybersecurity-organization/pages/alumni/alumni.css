@@ -1,7 +1,7 @@
 .main {
     display: flex;
     flex-direction: column;
-    color: white;
+    color: #171717;
 }
 
 .container {
@@ -23,7 +23,7 @@ img {
 
 .text {
     width: 850px;
-    font-family: 'Sen', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     padding-left: 20px;
     float: left;
     word-wrap: break-word;
@@ -33,19 +33,26 @@ img {
     flex-grow: 0;
 }
 
+h1{
+    font-family: 'Days One', sans-serif;
+}
+
 h2{
-    color: black;
+    color: #171717;
+    font-weight: 500;
 }
 h3{
+    font-weight: 400;
     line-height: 1.2;
 }
 
 a {
     text-decoration: none;
     text-decoration-color: none;
-    color: white;
+    color: #171717;
+    font-weight: 600;
 }
 
 a:hover {
-    color: black;
+    color:#89b0e5;
 }

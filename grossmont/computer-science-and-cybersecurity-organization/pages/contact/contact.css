@@ -1,8 +1,9 @@
 h3, h2, li, p{
-    color: white;
-    font-family: 'Sen', sans-serif;
+    color: #171717;
+    font-family: 'Work Sans', sans-serif;
 }
-a{
+
+/* a{
     text-decoration: none;
     text-decoration-color: none;
-}
+} */
