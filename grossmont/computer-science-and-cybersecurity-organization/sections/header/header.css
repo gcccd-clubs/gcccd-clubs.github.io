@@ -10,7 +10,7 @@ ul>div {
 }
 
 header {
-  background-color: #001D1E;
+  background-color: #89b0e5;
   height: 100px;
   display: flex;
   justify-content: space-between;
@@ -27,10 +27,7 @@ nav {
 }
 
 nav a {
-  background-color: black;
   padding: 0.75rem 1rem;
-  border: 2px solid white;
-  border-radius: 50px;
 }
 
 body {
@@ -48,8 +45,8 @@ body {
 }
 
 .clubNameUpper {
-  font-family: 'PolenticalNeon', sans-serif;
-  font-size: 2rem;
+  font-family: 'Day Ones', sans-serif;
+  font-size: 2.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -63,32 +60,23 @@ body {
   /* color: #5CE1E6 */
 }
 
-.clubNameLower {
-  font-weight: lighter;
-  font-family: 'Sen', sans-serif;
-  font-size: 20px;
-  margin: 0;
-  color: #D9D9D9
-}
 
 a {
   text-decoration: none;
   text-decoration-color: none;
-  color: #5CE1E6;
+  color: #171717;
 
 }
 
 .tab {
-  color: #FFFFFF;
   font-size: 18px;
+  font-family: 'Work Sans', sans-serif;
+  color: #171717;
   font-weight: bold;
-  font-family: 'Sen', sans-serif;
-  color: #D9D9D9
 }
 
 
 .tab:hover {
   opacity: .85;
-  color: #000;
-  background-color: #5CE1E6;
+  color: #5CE1E6;
 }
