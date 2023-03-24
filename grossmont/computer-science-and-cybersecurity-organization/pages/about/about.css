@@ -1,6 +1,12 @@
-/* h4, li, p{
-    color: white;
-} */
+ h4, li, p{
+    color: #171717;
+    font-family: 'Work Sans', sans-serif;
+} 
+
+h4{
+    font-weight: 400;
+    font-size: large;
+}
 
 body {
     padding-top: 10vh;

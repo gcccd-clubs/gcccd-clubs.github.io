@@ -5,21 +5,26 @@ html,body{
 }
 
 footer {
-    font-family: 'Sen', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     text-align: center;
-    background-color: #001D1E;
-    color: white;
+    background-color: white;
+    color: #171717;
     position: absolute;
     bottom: 0;
     width: 100%;
 }
 
+p{
+    line-height: .5em ;
+}
+
 a {
     text-decoration: none;
     text-decoration-color: none;
-    color: #5CE1E6;
+    font-weight: 600;
+    color: #171717;
 }
 
-/* a:hover {
-    color: #a61c3a
-} */
+a:hover {
+    color: #89b0e5
+}
