@@ -59,6 +59,10 @@ body {
   /* color: #5CE1E6 */
 }
 
+#clubLogo{
+  transform: scale(65%);
+}
+
 
 a {
   text-decoration: none;
