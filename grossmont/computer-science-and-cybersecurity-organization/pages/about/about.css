@@ -1,5 +1,5 @@
  h4, li, p{
-    color: #171717;
+    color:  var(--secondary-color);
     font-family: 'Work Sans', sans-serif;
 } 
 

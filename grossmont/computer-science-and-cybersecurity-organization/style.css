@@ -5,7 +5,7 @@ h4 {
 }
 
 body {
-  background-color: #fff;
+  background-color: var(--primary-color);
 }
 
 .fixed-header {
@@ -33,4 +33,14 @@ body {
 body {
   padding-top: 15vh;
   padding-bottom: 15vh;
+}
+
+:root{
+  --primary-color: white;
+  --secondary-color: #171717;
+}
+
+.dark-theme{
+  --primary-color: #171717;
+  --secondary-color:white;
 }

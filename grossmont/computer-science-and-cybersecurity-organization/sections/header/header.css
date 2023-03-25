@@ -14,7 +14,6 @@ header {
   height: 100px;
   display: flex;
   justify-content: space-between;
-
   align-items: center;
 }
 
@@ -79,4 +78,11 @@ a {
 .tab:hover {
   opacity: .85;
   color: #5CE1E6;
+}
+
+#icon{
+  width: 25;
+  height: auto;
+  object-fit: contain;
+  cursor: pointer;
 }

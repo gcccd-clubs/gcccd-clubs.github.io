@@ -7,8 +7,8 @@ html,body{
 footer {
     font-family: 'Work Sans', sans-serif;
     text-align: center;
-    background-color: white;
-    color: #171717;
+    background-color:  var(--primary-color);
+    color:  var(--secondary-color);
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -22,7 +22,7 @@ a {
     text-decoration: none;
     text-decoration-color: none;
     font-weight: 600;
-    color: #171717;
+    color: var(--secondary-color);
 }
 
 a:hover {
