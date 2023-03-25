@@ -1,1 +1,1 @@
-# grossmont.github.io
+# This is about Grossmont's Cybersecurity Club

@@ -1,7 +1,7 @@
 .main {
     display: flex;
     flex-direction: column;
-    color: #171717;
+    color: var(--secondary-color);
 }
 
 .container {
@@ -38,7 +38,7 @@ h1{
 }
 
 h2{
-    color: #171717;
+    color:  var(--secondary-color);
     font-weight: 500;
 }
 h3{
@@ -49,7 +49,7 @@ h3{
 a {
     text-decoration: none;
     text-decoration-color: none;
-    color: #171717;
+    color: var(--secondary-color);
     font-weight: 600;
 }
 
