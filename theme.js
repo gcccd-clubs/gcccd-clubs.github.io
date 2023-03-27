@@ -37,10 +37,8 @@ $(document).ready(function () {
 
             activePage.find('a').css('color','var(--primary-color)'); 
             activePage.find('li').css('color','var(--primary-color)'); 
-            
 
-            //@suldanaa see if you can select the footer and change its color, also change the text color of the header and footer by seeing the syntax pattern of this code
-            //and target the buttons to change its font color
+            $(footerI).find('body').css('background-color', 'var(--secondary-color)');
             $(footerI).find('footer').css('background-color', 'var(--secondary-color)');//secondary color = #171717 (black)
             $(footerI).find('p').css('color', 'var(--primary-color)');//primary color = white
             $(footerI).find('a').css('color', 'var(--primary-color)');
