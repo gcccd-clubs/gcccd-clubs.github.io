@@ -11,10 +11,15 @@ ul>div {
 
 header {
   background-color: #89b0e5;
-  height: 100px;
+  
+  /*height: 100px;*/
+  /*this height attribute causes it to have a scrollbar*/
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: stick
+
 }
 
 nav {
@@ -45,7 +50,7 @@ body {
 
 .clubNameUpper {
   font-family: 'Days One', sans-serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 400;
   display: flex;
   flex-direction: column;
