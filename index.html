@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>GCCCD Clubs</title>
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/css/style.css">
   <link rel="icon" href="/media/District-Logo-Icon-4canvas.png">
 
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic'
@@ -18,13 +18,14 @@
 
 <body style="margin: 0">
   <div class="fixed-header">
-    <iframe id="header" src="sections/header/header.html" width="100%" height="100%" frameborder="0"></iframe>
+    <iframe id="header" src="sections/header/header2.html" width="100%" height="100%" frameborder="0"></iframe>
   </div>
   <!-- <div class="carousel">
     <iframe src="sections/carousel/carousel.html" width="100%" height="100%" frameborder="0"></iframe>
   </div> -->
   <div class="club-list">
-    <iframe id="club-list" src="sections/club-list/grossmont-clubs.html" width="100%" height="100%" frameborder="0"></iframe>
+    <iframe id="club-list" src="sections/club-list/grossmont-clubs.html" width="100%" height="100%"
+      frameborder="0"></iframe>
   </div>
 
   <script src="/jquery.min.js"></script>
@@ -59,7 +60,16 @@
     });
 
   </script>
-  <script src="sticky-header.js"></script>
+  <script>
+    fetch('https://api.github.com/users/khiemgluong/events?per_page=100&page=2')
+      .then(response => response.json())
+      .then(data => {
+        let count = 0;
+        const commitCount = data.length;
+        console.log('Total number of commits:', commitCount);
+      })
+      .catch(error => console.error(error));
+  </script>
 </body>
 
 </html>

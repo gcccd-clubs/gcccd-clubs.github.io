@@ -3,8 +3,6 @@ $(document).ready(function() {
   });
 
 $(window).scroll(function () {
-    // console.log($(this).scrollTop() + $(window).height());
-    // console.log($(this).scrollTop());
     if ($(window).scrollTop() + $(window).height() >= $(document).height() - 3) {
         console.log("You have reached the bottom!");
         $(".fixed-footer").css("display", "initial");

@@ -1,12 +1,37 @@
+/*@font-face {
+  font-family: 'PolenticalNeon';
+  src: url('/grossmont/computer-science-and-cybersecurity-organization/media/Polentical-Neon.ttf');
+} */
+
 ul>div {
-  background-color: white;
   padding: 1rem;
-  margin: 15vh 1vw;
-  border-radius: 15px;
+  margin: 2% 1vw;
+  border-radius: 10px;
 }
 
 header {
-  background-color: #006A65;
+  background-color: #89b0e5;
+  
+  /*height: 100px;*/
+  /*this height attribute causes it to have a scrollbar*/
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: stick
+
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+  /* add some space between buttons */
+  margin-right: 1rem;
+
+}
+
+nav a {
+  padding: 0.75rem 1rem;
 }
 
 body {
@@ -20,27 +45,52 @@ body {
 }
 
 .image {
-  flex-basis: 5vh
+  flex-basis: 12.5%;
 }
 
-.bigHead {
-  font-family: 'Sen', sans-serif;
+.clubName {
+  font-family: 'Days One', sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 90%;
+  margin: 0;
+  text-decoration: none;
+  text-decoration-color: none;
+ 
 }
+
+#clubLogo{
+  transform: scale(65%);
+}
+
 
 a {
   text-decoration: none;
   text-decoration-color: none;
+  color: #171717;
+
 }
 
-a:not(.bigHead a) {
-  color: black;
+.tab {
+  font-size: 20px;
+  font-family: 'Work Sans', sans-serif;
+  color: #171717;
+  font-weight: 500;
 }
 
-.bigHead a {
-  color: white;
-  padding-left: 5vh;
+
+.tab:hover {
+  opacity: .85;
+  color: #5CE1E6;
+  font-weight: bold;
 }
 
-a:hover:not(.bigHead a) {
-  color: #3c3c3c
+#icon{
+  width: 25;
+  height: auto;
+  object-fit: contain;
+  cursor: pointer;
 }

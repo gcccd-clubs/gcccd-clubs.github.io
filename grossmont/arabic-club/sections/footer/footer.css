@@ -1,0 +1,30 @@
+html,body{
+    width: 100%;
+    margin: 0;
+
+}
+
+footer {
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    background-color:  var(--primary-color);
+    color:  var(--secondary-color);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+p{
+    line-height: .5em ;
+}
+
+a {
+    text-decoration: none;
+    text-decoration-color: none;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+a:hover {
+    color: #89b0e5
+}
