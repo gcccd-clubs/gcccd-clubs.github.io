@@ -11,7 +11,6 @@ function setHeaderText(headerText) {
         var currentPath = location.pathname; // e.g., "/folder/subfolder/index.html"
         var parentPath = currentPath.substring(0, currentPath.lastIndexOf('/')); // e.g., "/folder/subfolder"
         var parentDir = parentPath.substring(parentPath.lastIndexOf('/') + 1);
-        console.log(currentPath + '\t' + parentPath + '\t' + parentDir);
 
         $(headerI).find('.clubName a').text(headerText);
         $(headerI).find('.clubName a').attr("href", parentPath + "/index.html");
@@ -22,7 +21,6 @@ function setHeaderText(headerText) {
             console.log(text);
             $(element).attr("href", parentPath + urls[index]);
         });
-        console.log(parentPath + urls[0]);
 
     });
 }
