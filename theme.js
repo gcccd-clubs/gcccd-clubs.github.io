@@ -2,51 +2,52 @@ $(document).ready(function () {
 
     var header = $('#header');
     var headerI = header.contents()[0];
-    var color =  $(headerI).find("header").css( "background-color" );
-    console.log("col "+color);
     var activePage = window.top.$('html').contents();
 
     var footer = $('#footer');
     var footerI = footer.contents()[0];
+    var color = $(headerI).find("header").css("background-color");
+    console.log("col " + color);
 
     $(headerI).find('#icon').click(function () {
         event.preventDefault();
         //Set the icon id to a variable
+
         var icon = $(headerI).find('#icon');
-        var logo =  $(headerI).find('#clubLogo');
+        var logo = $(headerI).find('#clubLogo');
 
         //Toggle between the two images, this checks if the image is equal to moon.png (=== operator), then you change it to sun.png
         if (icon.attr('src') === '/media/moon.png') {
             darkmode();
-        //But if the icon is not moon.png, THEN we set it to moon, and change all the properties that we changed earlier back
+            //But if the icon is not moon.png, THEN we set it to moon, and change all the properties that we changed earlier back
         } else {
-           lightmode();
+            lightmode();
         }
 
         //*** FUNCTIONS TO LESSEN CODE ***/
-        function darkmode(){
+        function darkmode() {
             icon.attr('src', '/media/whitesun.png');
             logo.attr('src', '/grossmont/computer-science-and-cybersecurity-organization/media/dark_adjusted logo.png')
-            
+
             $('body').css('background-color', 'var(--primary-color)');
             var invertedColor = invert(componentToHex(color));
             $(headerI).find('header').css('background-color', invertedColor);
-            
-            activePage.css('background-color', 'var(--secondary-color)'); 
+
+            activePage.css('background-color', 'var(--secondary-color)');
 
             activePage.find('h1, h2, h3, h4, p, a, li').css('color', 'var(--primary-color)');
 
             $(footerI).find('body, footer').css('background-color', 'var(--secondary-color)');//secondary color = #171717 (black)
             $(footerI).find('p, a').css('color', '#ffffff');//primary color = white
-        } 
-        function lightmode(){
+        }
+        function lightmode() {
             icon.attr('src', '/media/moon.png');
             logo.attr('src', '/grossmont/computer-science-and-cybersecurity-organization/media/adjusted logo.png')
 
-            $('body').css('background-color', 'var(--primary-color)'); 
+            $('body').css('background-color', 'var(--primary-color)');
             $(headerI).find('header').css('background-color', color);
 
-            activePage.find('h1, h2, h3, h4, p, a, li').css('color', 'var(--secondary-color)');            
+            activePage.find('h1, h2, h3, h4, p, a, li').css('color', 'var(--secondary-color)');
 
             $(footerI).find('body, footer').css('background-color', 'var(--primary-color)');
             $(footerI).find('p, a').css('color', 'var(--secondary-color)');
