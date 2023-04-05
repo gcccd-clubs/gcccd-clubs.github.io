@@ -7,11 +7,12 @@ html,body{
 footer {
     font-family: 'Work Sans', sans-serif;
     text-align: center;
-    background-color:  var(--primary-color);
-    color:  var(--secondary-color);
+    /* background-color:  var(--primary-color); */
+    /* color:  var(--secondary-color); */
     position: absolute;
     bottom: 0;
     width: 100%;
+    padding-top: 1.5%;
 }
 
 p{

@@ -5,10 +5,7 @@ ul>div {
   }
   
   header {
-    background-color: #89b0e5;
-    
-    /*height: 100px;*/
-    /*this height attribute causes it to have a scrollbar*/
+    /* background-color: #89b0e5; */
     
     display: flex;
     justify-content: space-between;
