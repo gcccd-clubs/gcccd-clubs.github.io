@@ -1,6 +1,6 @@
-$(document).ready(function() {
+$(document).ready(function () {
     $(".fixed-footer").css("display", "none");
-  });
+});
 
 $(window).scroll(function () {
     if ($(window).scrollTop() + $(window).height() >= $(document).height() - 3) {
@@ -14,3 +14,4 @@ $(window).scroll(function () {
         $(".fixed-footer").css("display", "none");
     }
 });
+
