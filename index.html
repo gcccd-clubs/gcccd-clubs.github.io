@@ -60,16 +60,6 @@
     });
 
   </script>
-  <script>
-    fetch('https://api.github.com/users/khiemgluong/events?per_page=100&page=2')
-      .then(response => response.json())
-      .then(data => {
-        let count = 0;
-        const commitCount = data.length;
-        console.log('Total number of commits:', commitCount);
-      })
-      .catch(error => console.error(error));
-  </script>
 </body>
 
 </html>
