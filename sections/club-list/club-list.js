@@ -36,7 +36,6 @@ $('.tab-list').each(function () {                   // Find lists of tabs
           clubLogo.attr('src', '/grossmont/computer-science-and-cybersecurity-organization/media/Logo.png');
         }else{
           clubLogo.attr('src', '/media/District-Logo-Icon-4canvas.png');
-
         }
       }
     }
