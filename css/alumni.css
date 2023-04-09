@@ -1,7 +1,6 @@
 .main {
-    display: flex;
-    flex-direction: column;
-    color: var(--secondary-color);
+    width: 80%;
+    margin: 0 auto; /* center the element */
 }
 
 .container {
@@ -13,7 +12,7 @@
 
 img {
     border-radius: 15px;
-    width: 400px;
+    width: 50vh;
     height: auto;
     float: left;
     padding-left: 5px;
@@ -22,14 +21,13 @@ img {
 }
 
 .text {
-    width: 850px;
+    width: 100%;
     font-family: 'Work Sans', sans-serif;
     padding-left: 20px;
     float: left;
     word-wrap: break-word;
     line-height: 1em;
     text-align: left;
-    flex-basis: 500px;
     flex-grow: 0;
 }
 
@@ -56,3 +54,27 @@ a {
 a:hover {
     color:#89b0e5;
 }
+
+@media screen and (max-width: 720px) {
+    .main{
+        width: 90%;
+    }
+    .container {
+      flex-direction: column;
+    }
+
+    .text{
+        padding-left: 0;
+
+    }
+
+    .text> h1{
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    img{
+        width: 80%;
+    }
+
+  }
