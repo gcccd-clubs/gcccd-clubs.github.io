@@ -1,7 +1,7 @@
 ul>div {
   background-color: white;
   padding: 1rem;
-  margin: 15vh 1vw;
+  margin: 15vh 3vh;
   border-radius: 15px;
 }
 
@@ -21,8 +21,8 @@ body {
 
 .imageText {
   display: flex;
-  align-items: left;
-  justify-content: left;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .image {
@@ -43,6 +43,10 @@ a {
   text-decoration-color: none;
 }
 
+ul {
+  margin: 0px;
+}
+
 a:not(.bigHead a) {
   color: black;
 }
@@ -54,7 +58,6 @@ ul div:nth-child(2) {
 
 .bigHead a {
   color: white;
-  padding-left: 5vh;
 }
 
 a:hover:not(.bigHead a) {
@@ -63,7 +66,7 @@ a:hover:not(.bigHead a) {
 
 @media screen and (max-width: 720px) {
   #collegeSwap {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
   }
 
   img#collegeLogo {
@@ -79,7 +82,13 @@ a:hover:not(.bigHead a) {
     display: inherit;
     margin-right: 3%;
   }
-  ul div:first-child{
+
+  ul div:first-child {
     display: none;
+  }
+
+  ul>div {
+    margin-right: 5vh !important;
+    padding: 0.8rem;
   }
 }

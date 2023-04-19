@@ -37,7 +37,8 @@
 
 li,
 a,
-h3 {
+h3,
+p {
   font-family: 'Days One', sans-serif;
 
 }
@@ -70,8 +71,6 @@ h3 {
 
 }
 
-
-
 /********** HOVER STATES **********/
 .tab-list li:hover {
   background-color: #d3d3d3;
@@ -82,9 +81,6 @@ h3 {
   border-left: 3px solid maroon;
   border-radius: 15px;
 }
-
-
-
 
 /********** PANELS **********/
 .tab-panel {
@@ -102,6 +98,7 @@ h3 {
 
 .tab-panel p {
   margin: 0px;
+  text-align: justify;
 }
 
 
@@ -113,6 +110,9 @@ h3 {
 @media screen and (max-width: 720px) {
   .three.columns {
     grid-template-columns: 1fr 0fr;
+  }
 
+  .nine.columns {
+    width: 100%;
   }
 }
