@@ -3,9 +3,9 @@ $(document).ready(function () {
 });
 
 $(window).scroll(function () {
-    if ($(window).scrollTop() + $(window).height() >= $(document).height() - 3) {
+    if ($(window).scrollTop() + $(window).height() >= $(document).height() - 1) {
         console.log("You have reached the bottom!");
-        $(".fixed-footer").css("display", "initial");
+        $(".fixed-footer").css("display", "inherit");
     }
     else if ($(this).scrollTop() == 0) {
         $(".fixed-footer").css("display", "none");
