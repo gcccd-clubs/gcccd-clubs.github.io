@@ -3,7 +3,7 @@ $(document).ready(function () {
 });
 
 $(window).scroll(function () {
-    if ($(window).scrollTop() + $(window).height() >= $(document).height() - 1) {
+    if ($(window).scrollTop() + $(window).height() >= $(document).height() - 2) {
         console.log("You have reached the bottom!");
         $(".fixed-footer").css("display", "inherit");
     }

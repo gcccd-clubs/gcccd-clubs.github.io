@@ -26,7 +26,7 @@ $("#footer").on("load", function () {
         //*** FUNCTIONS TO LESSEN CODE ***/
         function darkmode() {
             icon.attr('src', '/media/whitesun.png');
-            logo.attr('src', '/grossmont/computer-science-and-cybersecurity-organization/media/dark_adjusted logo.png')
+            logo.attr('src', '/grossmont/computer-science-and-cybersecurity-organization/media/dark-logo.png')
 
             $('body').css('background-color', 'var(--primary-color)');
             var invertedColor = invert(componentToHex(color));
@@ -41,7 +41,7 @@ $("#footer").on("load", function () {
         }
         function lightmode() {
             icon.attr('src', '/media/moon.png');
-            logo.attr('src', '/grossmont/computer-science-and-cybersecurity-organization/media/adjusted logo.png')
+            logo.attr('src', '/grossmont/computer-science-and-cybersecurity-organization/media/light-logo.png')
 
             $('body').css('background-color', 'var(--primary-color)');
             $(headerI).find('header, #dropdown-menu a').css('background-color', color);
